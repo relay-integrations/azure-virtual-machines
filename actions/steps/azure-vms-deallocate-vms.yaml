@@ -1,11 +1,10 @@
 apiVersion: integration/v1
 kind: Step
-name: template
+name: azure-vms-deallocate-vms
 version: 1
-summary: Step template
+summary: |
 
 description: |
-  This is a template for a simple step.
 
 build:
   apiVersion: build/v1

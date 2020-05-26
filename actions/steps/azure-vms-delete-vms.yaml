@@ -1,0 +1,11 @@
+apiVersion: integration/v1
+kind: Step
+name: azure-vms-delete-vms
+version: 1
+summary: |
+
+description: |
+
+build:
+  apiVersion: build/v1
+  kind: Docker
