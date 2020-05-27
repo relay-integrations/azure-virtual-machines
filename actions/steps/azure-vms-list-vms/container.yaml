@@ -1,0 +1,6 @@
+apiVersion: container/v1
+kind: StepContainer
+inherit: ../hack/defs/azure-python
+title: List Azure Virtual Machines by SubscriptionId or Resource Group
+description: >
+  This task describes the Azure Virtual Machines in a given SubscriptionId (or optional Resource Group).
