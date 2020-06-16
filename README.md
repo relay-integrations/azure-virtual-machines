@@ -6,6 +6,13 @@ Integration with Azure Virtual Machines for Puppet Relay.
 
 The following are supported actions: 
 
+|   Type    |  Name              |
+|-----------|--------------------|
+| Step      | [azure-virtual-machines-step-vm-deallocate](/steps/azure-virtual-machines-step-vm-deallocate)  | 
+| Step      | [azure-virtual-machines-step-vm-delete](/steps/azure-virtual-machines-step-vm-delete)  | 
+| Step      | [azure-virtual-machines-step-vm-list](/steps/azure-virtual-machines-step-vm-list)  | 
+| Step      | [azure-virtual-machines-step-vm-redeploy](/steps/azure-virtual-machines-step-vm-redeploy)  |
+| Step      | [azure-virtual-machines-step-vm-restart](/steps/azure-virtual-machines-step-vm-restart)  | 
 
 ## Contributing
 

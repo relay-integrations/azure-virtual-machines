@@ -1,4 +1,4 @@
-# azure-vms-redeploy-vms
+# azure-virtual-machines-step-vm-redeploy
 
 This [Azure](https://azure.microsoft.com/en-us/services/virtual-machines/) step container redeploys a set of Azure virtual machines in an Azure subscription given a set of resource IDs. 
 
@@ -20,7 +20,7 @@ None
 steps:
 # ...
 - name: azure-vms-redeploy-vms
-  image: projectnebula/azure-vms-redeploy-vms
+  image: relaysh/azure-virtual-machines-step-vm-redeploy
   spec:
     azure:
       connection: !Connection { type: azure, name: my-azure-account }

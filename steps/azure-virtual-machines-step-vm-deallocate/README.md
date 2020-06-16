@@ -1,7 +1,6 @@
-# azure-vms-delete-vms
+# azure-virtual-machines-step-vm-deallocate
 
-This [Azure](https://azure.microsoft.com/en-us/services/virtual-machines/) step container deletes a set of
-Azure virtual machines in an Azure subscription given a set of resource IDs. 
+This [Azure](https://azure.microsoft.com/en-us/services/virtual-machines/) step container deallocates a set of Azure virtual machines in an Azure subscription given a set of resource IDs. Deallocated VMs do not incurring billing charges.
 
 ## Specification
 
@@ -9,8 +8,8 @@ Azure virtual machines in an Azure subscription given a set of resource IDs.
 |---------|---------------|-----------|-------------|---------|----------|
 | `azure` || mapping | A mapping of Azure account configuration. | None | True |
 || `connection` | Azure Connection | Connection for the Azure account. Use the Connection sidebar to configure the Azure Connection | None | True |
-| `resourceIDs` ||  An array of Azure Virtual Machine resource IDs | The list of resource IDs of the Azure Virtual Machines to be deleted | None | True |
-| `waitForDeletion` ||  boolean | Determines whether to wait for Virtual Machines to be deleted before continuing | False | False | 
+| `resourceIDs` ||  An array of Azure Virtual Machine resource IDs | The list of resource IDs of the Azure Virtual Machines to be deallocated | None | True |
+| `waitForDeletion` ||  boolean | Determines whether to wait for Virtual Machines to be deallocated before continuing | False | False | 
 
 ## Outputs
 None
@@ -20,12 +19,12 @@ None
 ```yaml
 steps:
 # ...
-- name: azure-vms-delete-vms
-  image: projectnebula/azure-vms-delete-vms
+- name: azure-vms-deallocate-vms
+  image: relaysh/azure-virtual-machines-step-vm-deallocate
   spec:
     azure:
       connection: !Connection { type: azure, name: my-azure-account }
-    waitForDeletion: true 
+    waitForDeletion: true
     resourceIDs:
     - /subscriptions/c8236dee-c104-452b-8128-f448c65d18fe/resourceGroups/my-rg/providers/Microsoft.Compute/virtualMachines/my-vm-1
     - /subscriptions/c8236dee-c104-452b-8128-f448c65d18fe/resourceGroups/my-rg/providers/Microsoft.Compute/virtualMachines/my-vm-2
@@ -41,4 +40,3 @@ To get the Azure VM resource IDs, try the following command using the Azure CLI:
 ```
 
 For more information on Resource IDs, check out the [documentation]("https://docs.microsoft.com/en-us/rest/api/resources/resources/getbyid"). 
-

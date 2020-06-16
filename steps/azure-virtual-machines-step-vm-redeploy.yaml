@@ -1,6 +1,6 @@
 apiVersion: integration/v1
 kind: Step
-name: azure-vms-list-vms
+name: azure-virtual-machines-step-vm-redeploy
 version: 1
 summary: |
 

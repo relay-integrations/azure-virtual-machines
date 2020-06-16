@@ -1,6 +1,6 @@
 apiVersion: integration/v1
 kind: Step
-name: azure-vms-restart-vms
+name: azure-virtual-machines-step-vm-list
 version: 1
 summary: |
 

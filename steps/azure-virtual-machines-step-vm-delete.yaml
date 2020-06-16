@@ -1,6 +1,6 @@
 apiVersion: integration/v1
 kind: Step
-name: azure-vms-deallocate-vms
+name: azure-virtual-machines-step-vm-delete
 version: 1
 summary: |
 

@@ -1,6 +1,0 @@
-apiVersion: container/v1
-kind: StepContainer
-inherit: ../hack/defs/azure-python
-title: Redeploys Azure Virtual Machines
-description: >
-  This task immediately redeploys a set of Azure Virtual Machines.

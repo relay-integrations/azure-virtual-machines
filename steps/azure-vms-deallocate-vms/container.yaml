@@ -1,6 +1,0 @@
-apiVersion: container/v1
-kind: StepContainer
-inherit: ../hack/defs/azure-python
-title: Deallocates Azure Virtual Machines
-description: >
-  This task immediately deallocates a set of Azure Virtual Machines.
