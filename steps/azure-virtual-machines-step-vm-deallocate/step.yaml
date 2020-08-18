@@ -2,10 +2,13 @@ apiVersion: integration/v1
 kind: Step
 name: azure-virtual-machines-step-vm-deallocate
 version: 1
-summary: |
+summary: VM deallocate
 
 description: |
 
 build:
   apiVersion: build/v1
   kind: Docker
+
+publish:
+  repository: relaysh/azure-virtual-machines-step-vm-deallocate
