@@ -39,4 +39,4 @@ To get the Azure VM resource IDs, try the following command using the Azure CLI:
 "/subscriptions/c8236dee-c104-452b-8128-f448c65d18fe/resourceGroups/my-rg/providers/Microsoft.Compute/virtualMachines/my-vm-2"
 ```
 
-For more information on Resource IDs, check out the [documentation]("https://docs.microsoft.com/en-us/rest/api/resources/resources/getbyid"). 
+For more information on Resource IDs, check out the [documentation](https://docs.microsoft.com/en-us/rest/api/resources/resources/getbyid). 
