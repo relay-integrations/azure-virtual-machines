@@ -12,3 +12,8 @@ build:
 
 publish:
   repository: relaysh/azure-virtual-machines-step-vm-restart
+
+schemas:
+  spec:
+    source: file
+    file: spec.schema.json

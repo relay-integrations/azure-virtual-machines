@@ -2,20 +2,6 @@
 
 This [Azure](https://azure.microsoft.com/en-us/services/virtual-machines/) step container lists the virtual machines in an Azure subscription or resource group and sets an output, `virtualMachines`, to an array of virtual machine objects.
 
-## Specification
-
-| Setting | Child setting | Data type | Description | Default | Required |
-|---------|---------------|-----------|-------------|---------|----------|
-| `azure` || mapping | A mapping of Azure account configuration. | None | True |
-|| `connection` | Azure Connection | Connection for the Azure account. Use the Connection sidebar to configure the Azure Connection | None | True |
-| `resourceGroup` || string | Resource group to look up virtual machines under | None | False | 
-
-## Outputs
-
-| Name | Data type | Description |
-|------|-----------|-------------|
-| `virtualMachines` | array of Azure Virtual machines | List of Azure virtual machines and metadata. |
-
 ## Example
 
 ```yaml
