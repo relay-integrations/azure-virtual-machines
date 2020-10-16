@@ -17,3 +17,17 @@ schemas:
   spec:
     source: file
     file: spec.schema.json
+
+examples:
+- summary: Delete Azure virtual machine
+  content:
+    apiVersion: v1
+    kind: Step
+    name: azure-vms-delete-vm
+    image: relaysh/azure-virtual-machines-step-vm-delete
+    spec:
+      azure:
+        connection: !Connection { type: azure, name: my-azure-account }
+      waitForDeletion: true
+      resourceIDs:
+      - !Parameter resourceID

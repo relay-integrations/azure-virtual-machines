@@ -2,19 +2,6 @@
 
 This [Azure](https://azure.microsoft.com/en-us/services/virtual-machines/) step container lists the virtual machines in an Azure subscription or resource group and sets an output, `virtualMachines`, to an array of virtual machine objects.
 
-## Example
-
-```yaml
-steps:
-# ...
-- name: azure-vms-list-vms
-  image: relaysh/azure-virtual-machines-step-vm-list
-  spec:
-    azure:
-      connection: !Connection { type: azure, name: my-azure-account }
-    resourceGroup: 'my_resource_group' 
-```
-
 ## Example output `virtualMachines`
 ```
 [
