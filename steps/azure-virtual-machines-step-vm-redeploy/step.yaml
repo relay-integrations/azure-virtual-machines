@@ -2,7 +2,7 @@ apiVersion: integration/v1
 kind: Step
 name: azure-virtual-machines-step-vm-redeploy
 version: 1
-summary: VM redeploy
+summary: Redeploy virtual machine
 
 description: |
 
