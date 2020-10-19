@@ -2,7 +2,7 @@ apiVersion: integration/v1
 kind: Step
 name: azure-virtual-machines-step-vm-delete
 version: 1
-summary: VM delete
+summary: Delete virtual machine
 
 description: |
 
