@@ -2,7 +2,7 @@ apiVersion: integration/v1
 kind: Step
 name: azure-virtual-machines-step-vm-restart
 version: 1
-summary: VM restart
+summary: Restart virtual machine
 
 description: |
 
