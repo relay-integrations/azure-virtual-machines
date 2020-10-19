@@ -2,7 +2,7 @@ apiVersion: integration/v1
 kind: Step
 name: azure-virtual-machines-step-vm-list
 version: 1
-summary: VM list
+summary: List virtual machines
 
 description: |
 
