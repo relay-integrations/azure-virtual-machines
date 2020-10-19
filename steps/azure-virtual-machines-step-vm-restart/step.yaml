@@ -19,7 +19,7 @@ schemas:
     file: spec.schema.json
 
 examples:
-- summary: Restart Azure virtual machine
+- summary: Restart virtual machine
   content:
     apiVersion: v1
     kind: Step
