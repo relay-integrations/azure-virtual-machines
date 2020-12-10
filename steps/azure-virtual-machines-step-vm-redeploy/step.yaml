@@ -5,7 +5,7 @@ version: 1
 summary: Redeploy virtual machine
 
 description: |
-
+    This step redeploys a set of Azure virtual machines.
 build:
   apiVersion: build/v1
   kind: Docker
