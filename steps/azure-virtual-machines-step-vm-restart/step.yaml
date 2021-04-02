@@ -4,8 +4,7 @@ name: azure-virtual-machines-step-vm-restart
 version: 1
 summary: Restart virtual machine
 
-description: |
-    This step restarts a set of Azure virtual machines.
+description: Restarts a set of Azure virtual machines.
 build:
   apiVersion: build/v1
   kind: Docker

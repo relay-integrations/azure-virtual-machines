@@ -4,8 +4,7 @@ name: azure-virtual-machines-step-vm-list
 version: 1
 summary: List virtual machines
 
-description: |
-    This step lists the Azure virtual machines in a subscription.
+description: Lists the Azure virtual machines in a subscription.
 build:
   apiVersion: build/v1
   kind: Docker

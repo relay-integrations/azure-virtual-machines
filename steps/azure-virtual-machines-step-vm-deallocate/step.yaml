@@ -4,7 +4,7 @@ name: azure-virtual-machines-step-vm-deallocate
 version: 1
 summary: Deallocate virtual machine
 
-description: |
+description: Deallocates a set of Azure virtual machines.
 
 build:
   apiVersion: build/v1
