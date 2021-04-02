@@ -4,8 +4,7 @@ name: azure-virtual-machines-step-vm-delete
 version: 1
 summary: Delete virtual machine
 
-description: |
-    This step deletes a set of Azure virtual machines.
+description: Deletes a set of Azure virtual machines.
 build:
   apiVersion: build/v1
   kind: Docker
